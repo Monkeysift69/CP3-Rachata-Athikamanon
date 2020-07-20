@@ -1,0 +1,5 @@
+speed =  int(input('ระยะทาง :'))
+tme = int(input('เวลาการเคลื่อนที่ :'))
+v  = speed/time
+
+print(float(v), "km/h")
