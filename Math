@@ -1,0 +1,68 @@
+from math import sqrt
+import math
+
+print("1. คำนวน3เหลี่ยมปีตาโกลัส")
+print("2. หาพื้นที่วงกลม")
+print("3. คำนวนเกรด")
+print("4. คำนวนVat")
+userSelected = int(input(">>"))
+
+#ห่พื้นที่ 3เหลี่ยม ปีทากอลัส
+
+
+
+
+def side_c():
+    pass
+
+if userSelected == 1:
+    formula = input('จะคำนวนด้านไหนระหว่าง a, b, c ')
+    if formula == 'c':
+        side_a = int(input('ความยาวด้าน a: '))
+        side_b = int(input('ความยาวด้าน b: '))
+
+        side_c = sqrt(side_a * side_a + side_b * side_b)
+
+        print('ความยาวด้าน C = ')
+        print(side_c)
+
+    elif formula == 'a':
+        side_b = int(input('ความยาวด้าน b: '))
+        side_c = int(input('ความยาวด้าน c: '))
+
+        side_a = c = sqrt(side_b**2 - side_c**2)
+
+        print('ความยาวด้าน a =')
+        print(side_a)
+
+    elif formula == 'b':
+        side_a = int(input('ความยาวด้าน a: '))
+        side_b = int(input('ความยาวด้าน c: '))
+
+        side_c = sqrt(side_a**2 - side_b**2)
+
+        print('ความยาวด้าน b =')
+        print(side_c)
+
+elif userSelected == 2:
+    r = float(input('รัศมีของวงกลม :'))
+    area = math.pi * r * r
+
+    print("รัศมีของวงกลม = %.2f" %area)
+elif userSelected == 3:
+    score = int(input("คะแนน :"))
+    if score >= 80:
+        print("A")
+    elif score >= 75:
+        print("B+")
+    elif score >= 70:
+        print("B")
+    elif score >= 65:
+        print("c+")
+    elif score >= 60:
+        print("c")
+elif userSelected == 4:
+    price = int(input('ราคาของที่ซื้อ: '))
+    vat = 7
+    result = price + (price * vat / 100)
+    print(result)
