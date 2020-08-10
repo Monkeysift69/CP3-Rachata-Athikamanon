@@ -5,6 +5,7 @@ print("1. คำนวน3เหลี่ยมปีตาโกลัส")
 print("2. หาพื้นที่วงกลม")
 print("3. คำนวนเกรด")
 print("4. คำนวนVat")
+print("5. คำนวนอัตราความเร็ว")
 userSelected = int(input(">>"))
 
 #ห่พื้นที่ 3เหลี่ยม ปีทากอลัส
@@ -66,3 +67,9 @@ elif userSelected == 4:
     vat = 7
     result = price + (price * vat / 100)
     print(result)
+elif userSelected == 5:
+    speed =  int(input('ระยะทาง :'))
+    tme = int(input('เวลาการเคลื่อนที่ :'))
+    v  = speed/time
+
+    print(float(v), "km/h")
