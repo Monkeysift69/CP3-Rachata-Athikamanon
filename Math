@@ -6,6 +6,7 @@ print("2. หาพื้นที่วงกลม")
 print("3. คำนวนเกรด")
 print("4. คำนวนVat")
 print("5. คำนวนอัตราความเร็ว")
+print("6. คำนวน3เหลี่ยม")
 userSelected = int(input(">>"))
 
 #ห่พื้นที่ 3เหลี่ยม ปีทากอลัส
@@ -73,3 +74,8 @@ elif userSelected == 5:
     v  = speed/time
 
     print(float(v), "km/h")
+elif usuerSelected == 6:
+    base = int(input("ความยาวฐาน"))
+    height = int(input("ความสูง"))
+    triangle = 1/2*base*height
+    print(triangle)
