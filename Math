@@ -5,8 +5,6 @@ print("1. คำนวน3เหลี่ยมปีตาโกลัส")
 print("2. หาพื้นที่วงกลม")
 print("3. คำนวนเกรด")
 print("4. คำนวนVat")
-print("5. คำนวนอัตราความเร็ว")
-print("6. คำนวน3เหลี่ยม")
 userSelected = int(input(">>"))
 
 #ห่พื้นที่ 3เหลี่ยม ปีทากอลัส
@@ -32,7 +30,7 @@ if userSelected == 1:
         side_b = int(input('ความยาวด้าน b: '))
         side_c = int(input('ความยาวด้าน c: '))
 
-        side_a = c = sqrt(side_b**2 - side_c**2)
+        side_a = sqrt(side_b**2 - side_c**2)
 
         print('ความยาวด้าน a =')
         print(side_a)
@@ -68,14 +66,3 @@ elif userSelected == 4:
     vat = 7
     result = price + (price * vat / 100)
     print(result)
-elif userSelected == 5:
-    speed =  int(input('ระยะทาง :'))
-    tme = int(input('เวลาการเคลื่อนที่ :'))
-    v  = speed/time
-
-    print(float(v), "km/h")
-elif usuerSelected == 6:
-    base = int(input("ความยาวฐาน"))
-    height = int(input("ความสูง"))
-    triangle = 1/2*base*height
-    print(triangle)
